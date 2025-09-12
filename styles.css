@@ -207,7 +207,7 @@ body {
   height: 50px;
   width: 100%;
   top: 0px;
-  background-color: #4d4d4d;
+  background-color: #ffffff;
   position: fixed;
 }
 
@@ -292,7 +292,7 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
+
 
 ‎    ‎
 
