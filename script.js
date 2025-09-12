@@ -1,4 +1,52 @@
-
+‎// Smooth scrolling for navigation links
+‎document.addEventListener('DOMContentLoaded', function() {
+‎    // Navbar scroll effect
+‎    const navbar = document.getElementById('navbar');
+‎    
+‎    window.addEventListener('scroll', function() {
+‎        if (window.scrollY > 50) {
+‎            navbar.classList.add('scrolled');
+‎        } else {
+‎            navbar.classList.remove('scrolled');
+‎        }
+‎    });
+‎    
+‎    // Mobile menu toggle
+‎    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+‎    const navLinks = document.getElementById('navLinks');
+‎    const navActions = document.querySelector('.nav-actions');
+‎    
+‎    mobileMenuBtn.addEventListener('click', function() {
+‎        mobileMenuBtn.classList.toggle('active');
+‎        navLinks.classList.toggle('mobile-open');
+‎        navActions.classList.toggle('mobile-open');
+‎    });
+‎    
+‎    // Close mobile menu when clicking on a link
+‎    const allNavLinks = document.querySelectorAll('.nav-link, .smooth-scroll');
+‎    allNavLinks.forEach(link => {
+‎        link.addEventListener('click', function() {
+‎            mobileMenuBtn.classList.remove('active');
+‎            navLinks.classList.remove('mobile-open');
+‎            navActions.classList.remove('mobile-open');
+‎        });
+‎    });
+‎    
+‎    // Smooth scrolling for internal links
+‎    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+‎        anchor.addEventListener('click', function(e) {
+‎            e.preventDefault();
+‎            const target = document.querySelector(this.getAttribute('href'));
+‎            if (target) {
+‎                const offsetTop = target.offsetTop - 100; // Account for fixed navbar
+‎                window.scrollTo({
+‎                    top: offsetTop,
+‎                    behavior: 'smooth'
+‎                });
+‎            }
+‎        });
+‎    });
+‎    
 ‎    // Intersection Observer for fade-in animations
 ‎    const observerOptions = {
 ‎        threshold: 0.1,
@@ -14,11 +62,11 @@
 ‎        });
 ‎    }, observerOptions);
 ‎    
-‎    // Observe all fade-in elements
+‎// Observe all fade-in elements
 ‎    document.querySelectorAll('.fade-in, .fade-in-delay-1, .fade-in-delay-2, .fade-in-delay-3, .fade-in-delay-4, .fade-in-delay-5, .fade-in-delay-6').forEach(el => {
 ‎        observer.observe(el);
 ‎    });
-‎
+‎    
 ‎    // Add hover effects for feature cards
 ‎    const featureCards = document.querySelectorAll('.feature-card');
 ‎    featureCards.forEach(card => {
