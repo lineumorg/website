@@ -1,38 +1,4 @@
-// Smooth scrolling for navigation links
-document.addEventListener('DOMContentLoaded', function() {
-    // Navbar scroll effect
-    const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-    
-    // Mobile menu toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const navLinks = document.getElementById('navLinks');
-    const navActions = document.querySelector('.nav-actions');
-    
-    mobileMenuBtn.addEventListener('click', function() {
-        mobileMenuBtn.classList.toggle('active');
-        navLinks.classList.toggle('mobile-open');
-        navActions.classList.toggle('mobile-open');
-    });
-    
-    // Close mobile menu when clicking on a link
-    const allNavLinks = document.querySelectorAll('.nav-link, .smooth-scroll');
-    allNavLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            mobileMenuBtn.classList.remove('active');
-            navLinks.classList.remove('mobile-open');
-            navActions.classList.remove('mobile-open');
-        });
-    });
-    
-    // Smooth scrolling for internal links
+// Smooth scrolling for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
