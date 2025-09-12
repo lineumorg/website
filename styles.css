@@ -45,6 +45,7 @@ body {
     color: hsl(var(--foreground));
     line-height: 1.6;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container {
