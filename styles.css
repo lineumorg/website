@@ -137,7 +137,7 @@ body {
 }
 
 .text-primary {
-    color: hsl(var(--primary));
+    color: var(--primary);
 }
 
 .font-semibold {
