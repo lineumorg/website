@@ -151,7 +151,8 @@ body {
 .navcover {
 width: 100%;
 padding: 5px 0px;
- top: 0;   
+top: 0;   
+position: fixed; 
 }
 
 .navcover .openbtn {
