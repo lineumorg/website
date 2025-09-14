@@ -121,10 +121,10 @@ body {
   height: 500px;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: var(--background);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 160px;
 }
 
 
