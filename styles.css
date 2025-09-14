@@ -119,7 +119,7 @@ body {
   width: 100%;
  top: 0; 
   background-color: var(--background);
-  position: relative;
+  position: absolute;
 }
 
 .nav > .nav-header {
