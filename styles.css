@@ -114,13 +114,6 @@ body {
 }
 
 /* Navigation Styles */
-}
-
-body {
-  margin: 0px;
-  font-family: 'segoe ui';
-}
-
 .nav {
   height: 50px;
   width: 100%;
@@ -245,7 +238,7 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}
+
 
 
 
