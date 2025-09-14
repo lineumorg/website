@@ -207,6 +207,7 @@ body {
   height: 50px;
   width: 100%;
   background-color: #4d4d4d;
+  z-index: 100;
   position: fixed;
 }
 
@@ -301,8 +302,7 @@ body {
     display: flex;
     align-items: center;
     padding: var(--section-padding);
-    overflow: hidden;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .hero-content {
