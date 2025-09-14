@@ -1,29 +1,7 @@
     // Main JavaScript functionality for the Lineum donation page
 
-// Navigation scroll effect
-window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navigation');
-    if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            const offsetTop = target.offsetTop - 80; // Account for fixed nav
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-    });
-});
+
 
 // Donation ticker functionality
 let currentAmount = 12345;
