@@ -124,8 +124,7 @@ body {
   background-color: var(--background);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 300px;
 }
 
 
@@ -149,6 +148,10 @@ body {
   font-size: 36px;
 }
 
+.navcover {
+width: 100%;
+padding: 15px 0px;   
+}
 .openbtn {
   font-size: 20px;
   cursor: pointer;
