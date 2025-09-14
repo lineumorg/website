@@ -124,7 +124,7 @@ body {
   background-color: var(--background);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 5000px;
+  padding-top: 500px;
 }
 
 
@@ -144,14 +144,14 @@ body {
 .sidepanel .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 35px;
   font-size: 36px;
 }
 
 .navcover {
 width: 100%;
-padding: 15px 0px;
-    
+padding: 5px 0px;
+ top: 0;   
 }
 
 .navcover .openbtn {
