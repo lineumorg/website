@@ -29,36 +29,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    
     <!-- Navigation -->
-    <nav id="navigation" class="nav">
-        <div class="container-custom">
-            <div class="nav-content">
-                <!-- Logo -->
-                <div class="nav-logo">
-                    <img src="src/assets/lineum-logo.png" alt="Lineum Logo" class="logo-img">
-                </div>
+    <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+    <a href="#">Link 5</a>
+  </div>
+</div>
 
-                <!-- Desktop Navigation -->
-                <div class="nav-links">
-                    <a href="#vision" class="nav-link">The Vision</a>
-                    <a href="#hackathon" class="nav-link">The Hackathon</a>
-                    <a href="#impact" class="nav-link">The Impact</a>
-                    <a href="#faq" class="nav-link">FAQ</a>
-                </div>
 
-                <!-- Donate Button -->
-                <div class="nav-donate">
-                    <button class="btn btn-donation btn-lg desktop-only" onclick="window.open('https://giveth.io', '_blank')">
-                        Donate on Giveth
-                    </button>
-                    <button class="btn btn-donation mobile-only" onclick="window.open('https://giveth.io', '_blank')">
-                        Donate
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    
     <!-- Hero Section -->
     <section class="hero-section">
         <!-- Background Image -->
