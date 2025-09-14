@@ -125,6 +125,7 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 
