@@ -204,9 +204,11 @@ body {
 
 /* Navigation */
 .nav {
+  background-color: hsl(var(--background));  
   height: 50px;
   width: 100%;
-  background-color: #4d4d4d;
+  top: 0;
+  right: 0;
   z-index: 100;
   position: fixed;
 }
@@ -308,7 +310,7 @@ body {
 .hero-content {
     text-align: center;
     position: relative;
-    z-index: 10;
+    z-index: 0;
 }
 
 .hero-logo {
