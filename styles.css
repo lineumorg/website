@@ -44,7 +44,6 @@ body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 .container {
@@ -209,7 +208,7 @@ body {
   width: 100%;
   top: 0;
   right: 0;
-  z-index: 100;
+  z-index: 20;
   position: fixed;
 }
 
@@ -309,8 +308,7 @@ body {
 
 .hero-content {
     text-align: center;
-    position: relative;
-    z-index: 0;
+    z-index: 10;
 }
 
 .hero-logo {
