@@ -207,7 +207,7 @@ body {
   height: 50px;
   width: 100%;
   background-color: #4d4d4d;
-  position: relative;
+  position: fixed;
 }
 
 .nav > .nav-header {
@@ -292,7 +292,6 @@ body {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-}  
 
 
 
@@ -301,7 +300,6 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    position: relative;
     padding: var(--section-padding);
     overflow: hidden;
     margin-top: 80px;
