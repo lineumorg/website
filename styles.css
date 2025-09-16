@@ -346,9 +346,9 @@ body {
 }
 
 .btn-hero {
-    background: hsl(0, 0%, 100%, 0.1);
-    color: var(--foreground);
-    border: 1px solid hsl(0, 0%, 100%, 0.2);
+    background: var(--gradient-accent);
+    color: var(--primary-foreground);
+    box-shadow: var(--shadow-glow);
 }
 
 .btn-hero:hover {
